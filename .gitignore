@@ -1,11 +1,13 @@
 import datetime
 from datetime import date
 
-def Total_Calls_Made(Red, Yellow, Green, Gray, Blue):
-    Total = Red + Yellow + Green + Gray + Blue
-    print("Clients Outreached So Far: ", Total)
-    Remaining_Calls = 3000 - Total
-    print("Remaining Clients To Outreach : ", Remaining_Calls)
+class Task1(object):
+    def Total_Clients_Outreached(Red, Yellow, Green, Gray, Blue):
+        Total = Red + Yellow + Green + Gray + Blue
+        print("Clients Outreached So Far: ", Total)
+        Total_Clients_From_Master_List = 3000
+        Remaining_Calls = Total_Clients_From_Master_List - Total
+        print("Remaining Clients To Outreach : ", Remaining_Calls)
 
 Keep_Account = int(input("Total Clients That Want To Keep Their Account: "))
 Close_Account = int(input("Total Clients That Want To Close Their Account: "))
@@ -14,6 +16,6 @@ Potential_Client = int(input("Total Clients That Are Potential Clients: "))
 Business_Closed = int(input("Total Clients That Have Closed Their Business: "))
 
 print("As of", date.today())
-Total_Calls_Made(Keep_Account, Close_Account, No_Respopnse, Potential_Client, Business_Closed)
+Task1.Total_Clients_Outreached(Keep_Account, Close_Account, No_Respopnse, Potential_Client, Business_Closed)
 
 
