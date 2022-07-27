@@ -2,23 +2,19 @@ import datetime
 from datetime import date
 
 
-class Task1(object):
-    def Total_Clients_Outreached(Red, Yellow, Green, Gray, Blue):
-        Total = Red + Yellow + Green + Gray + Blue
+class Tasks():
+    def Total_Calls_Made():
+        Close_Account = int(input("Total Clients That Want To Close Their Account: "))
+        No_Respopnse = int(input("Total Clients That Did Not Respond To Outreach: "))
+        Keep_Account = int(input("Total Clients That Want To Keep Their Account: "))
+        Potential_Client = int(input("Total Clients That Are Potential Clients: "))
+        Business_Closed = int(input("Total Clients That Have Closed Their Business: "))
+        Total = Close_Account + No_Respopnse + Keep_Account + Potential_Client + Business_Closed
         print("Clients Outreached So Far: ", Total)
-        Total_Clients_From_Master_List = 3000
-        Remaining_Calls = Total_Clients_From_Master_List - Total
+        Total_Clients_From_Master_list = 3000
+        Remaining_Calls = 3000 - Total
+        print("As of ", date.today())
         print("Remaining Clients To Outreach : ", Remaining_Calls)
 
 
-Keep_Account = int(input("Total Clients That Want To Keep Their Account: "))
-Close_Account = int(input("Total Clients That Want To Close Their Account: "))
-No_Respopnse = int(input("Total Clients That Did Not Respond To Outreach: "))
-Potential_Client = int(input("Total Clients That Are Potential Clients: "))
-Business_Closed = int(input("Total Clients That Have Closed Their Business: "))
-
-
-print("As of", date.today())
-Task1.Total_Clients_Outreached(Keep_Account, Close_Account, No_Respopnse, Potential_Client, Business_Closed)
-
-
+Tasks.Total_Calls_Made()
