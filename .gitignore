@@ -12,7 +12,7 @@ class Tasks():
         Total = Close_Account + No_Respopnse + Keep_Account + Potential_Client + Business_Closed
         print("Clients Outreached So Far: ", Total)
         Total_Clients_From_Master_list = 3000
-        Remaining_Calls = 3000 - Total
+        Remaining_Calls = Total_Clients_From_Master_list - Total
         print("As of ", date.today())
         print("Remaining Clients To Outreach : ", Remaining_Calls)
 
