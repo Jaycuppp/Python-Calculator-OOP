@@ -3,7 +3,7 @@ from datetime import date
 
 
 class Tasks():
-    def Total_Calls_Made():
+    def Total_Clients_Outreached():
         Close_Account = int(input("Total Clients That Want To Close Their Account: "))
         No_Respopnse = int(input("Total Clients That Did Not Respond To Outreach: "))
         Keep_Account = int(input("Total Clients That Want To Keep Their Account: "))
@@ -17,4 +17,4 @@ class Tasks():
         print("Remaining Clients To Outreach : ", Remaining_Calls)
 
 
-Tasks.Total_Calls_Made()
+Tasks.Total_Clients_Outreached()
