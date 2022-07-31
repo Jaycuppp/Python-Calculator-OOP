@@ -11,6 +11,7 @@ class Tasks():
         Business_Closed = int(input("Total Clients That Have Closed Their Business: "))
         Total = Close_Account + No_Respopnse + Keep_Account + Potential_Client + Business_Closed
         print("Clients Outreached So Far: ", Total)
+        #The right operand can be any total number based off whatever the total clientele list is 
         Total_Clients_From_Master_list = 3000
         Remaining_Calls = Total_Clients_From_Master_list - Total
         print("As of ", date.today())
