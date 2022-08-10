@@ -3,7 +3,7 @@ from datetime import date
 
 
 class Tasks():
-    def Total_Clients_Outreached():
+    def Total_Inactive_Clients_Outreached():
         # User Input For 5 Common Outcomes After Outreaching An Inactive Client
         Close_Account = int(
             input("Total Clients That Want To Close Their Account: "))
@@ -27,7 +27,7 @@ class Tasks():
         print("Remaining Clients To Outreach : ", Remaining_Calls)
         
 
-    def Total_Sales_Amount():
+    def Total_Sales_Made():
         # User Input For Up To 20 Leads Closed Per Day. The Total Closed Leads Can Be Different Per Pay
         Submission_Total_1 = int(input("Submission Total for 1st entry: "))
         Submission_Total_2 = int(input("Submission Total for 2nd entry: "))
@@ -65,5 +65,5 @@ class Tasks():
         print(a + b + c + d + e + f + g)
         
 
-Tasks.Total_Clients_Outreached()
-Tasks.Total_Rebates()
+Tasks.Total_Inactive_Clients_Outreached()
+Tasks.Total_Sales_Made()
