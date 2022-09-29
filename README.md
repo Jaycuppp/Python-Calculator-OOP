@@ -1,1 +1,1 @@
-#This is a simple python calculator OOP for some actual work related tasks for a typical Sales Rep
+#This is a simple python calculator for some real life work related tasks for a typical Sales Rep
