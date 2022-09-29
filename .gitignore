@@ -3,7 +3,7 @@ from datetime import date
 
 
 class Tasks():
-    def Total_Clients_Outreached():
+    def Total_Inactive_Clients_Outreached():
         # User Input For 5 Common Outcomes After Outreaching An Inactive Client
         Close_Account = int(
             input("Total Clients That Want To Close Their Account: "))
@@ -19,12 +19,12 @@ class Tasks():
         Total = Close_Account + No_Respopnse + \
             Keep_Account + Potential_Client + Business_Closed
         #The Variable Below Can Have Any Number On The Right Operand 
-        Total_Clients_From_Weekly_List = 750
+        Total_Clients_From_Weekly_List = int(input("How many total clients are in the master list?"))
         Remaining_Calls = Total_Clients_From_Weekly_List - Total
         # Final Message Result To Give Progress
         print(date.today())
-        print("Clients Outreached So Far: ", Total)
-        print("Remaining Clients To Outreach : ", Remaining_Calls)
+        print("Inactive Clients Outreached So Far: ", Total)
+        print("Remaining Inactive Clients To Outreach : ", Remaining_Calls)
         
 
     def Total_Sales_Made():
@@ -50,7 +50,7 @@ class Tasks():
         Total_Sale_Amount_19 = int(input("Sale #19 Total: "))
         Total_Sale_Amount_20 = int(input("Sale #20 Total: "))
         
-        # Addition Of Total Amount Of Sales
+        # Addition Of All Total Amount Of Sales
         a = Total_Sale_Amount_1 + Total_Sale_Amount_2 + Total_Sale_Amount_3
         b = Total_Sale_Amount_4 + Total_Sale_Amount_5 + Total_Sale_Amount_6
         c = Total_Sale_Amount_7 + Total_Sale_Amount_8 + Total_Sale_Amount_9
@@ -65,5 +65,5 @@ class Tasks():
         print(a + b + c + d + e + f + g)
         
 
-Tasks.Total_Clients_Outreached()
-Tasks.Total_Sales_Made()
+Tasks.Total_Inactive_Clients_Outreached()
+# Tasks.Total_Sales_Made()
