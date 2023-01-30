@@ -1,1 +1,1 @@
-#This is a simple python calculator for some real life work related tasks for a typical Sales Rep
+#This is a simple python program which is used in real life to help keep track of sales for a Salesman
