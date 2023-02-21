@@ -112,7 +112,7 @@ class Sales_Tasks_Data():
 
         print(f"The Total Amount of Sales You Made Today is ${Total}")
 
-
-Sales_Tasks_Data.Total_Prospective_Clients_Outreached()
-Sales_Tasks_Data.Total_Inactive_Clients_Outreached()
-Sales_Tasks_Data.Total_Sales_Made()
+if __name__ == "__main__":
+    Sales_Tasks_Data.Total_Prospective_Clients_Outreached()
+    Sales_Tasks_Data.Total_Inactive_Clients_Outreached()
+    Sales_Tasks_Data.Total_Sales_Made()
