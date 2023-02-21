@@ -126,4 +126,4 @@ if __name__ == "__main__":
         Sales_Made = Sales_Tasks_Data.Total_Sales_Made()
 
     else:
-        print("You have now Quit the Program. Have a nice dayt :)\n")
+        print("Bloop.")
