@@ -5,7 +5,7 @@ Reused_Exception_Quote = 'Invalid Number. Please Enter A Valid Amount Of Clients
 
 
 class Sales_Tasks_Data():
-    def Total_Prospective_Clients_Outreached():
+    def Prospective_Clients():
         # User Input For Some Common Outcomes After Outreaching A Prospective Client
         try:
             Rejection = int(input("Total Clients That Gave A Rejection From The Sales Pitch: "))
@@ -44,7 +44,7 @@ class Sales_Tasks_Data():
         print(f"Prospective Clients Outreached So Far: {Total}")
         print(f"Remaining Prospective Clients To Outreach: {Remaining_Calls}")
 
-    def Total_Inactive_Clients_Outreached():
+    def Inactive_Clients():
         # User Input For Some Common Outcomes After Outreaching An Inactive Client
         try:
             Close_Account = int(input("Total Clients That Want To Close Their Account: "))
@@ -112,7 +112,18 @@ class Sales_Tasks_Data():
 
         print(f"The Total Amount of Sales You Made Today is ${Total}")
 
+
 if __name__ == "__main__":
-    Sales_Tasks_Data.Total_Prospective_Clients_Outreached()
-    Sales_Tasks_Data.Total_Inactive_Clients_Outreached()
-    Sales_Tasks_Data.Total_Sales_Made()
+    User_Choice = input("Enter One of the Following\nI) Inactive Clients\nP) Prospective Clients\nT) Total Sales\n")
+
+    if User_Choice == "I" or User_Choice == "i":
+        Inactive_Clients = Sales_Tasks_Data.Inactive_Clients()  
+
+    elif User_Choice == "P" or User_Choice == "p":
+        Prospective_Clients = Sales_Tasks_Data.Prospective_Clients()
+
+    elif User_Choice == "T" or User_Choice == "t":
+        Sales_Made = Sales_Tasks_Data.Total_Sales_Made()
+
+    else:
+        print("You have now Quit the Program. Have a nice dayt :)\n")
